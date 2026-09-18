@@ -1,567 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
-    <title>Thabiso Kojoana</title>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Thabiso Kojoana">
+<meta name="description" content="Thabiso Kojoana's software portfolio: Java, Spring Boot, Android and web projects, including Kasi-Till, a mobile-first point-of-sale system.">
+<meta name="theme-color" content="#12364a">
+<title>Thabiso Kojoana | Java &amp; Backend Developer</title>
+<link rel="stylesheet" href="css/portfolio.css">
+<script src="js/portfolio.js" defer></script>
 </head>
-
-<body data-spy="scroll" data-target="#navbar">
-    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-5 line-bg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class="highlighted">Thab</span>iso <span class="highlighted">Kojo</span>ana<span
-                    class="highlighted">/</span> Full Stack Developer
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-item nav-link active px-4" href="#home">Home</a>
-                    <a class="nav-item nav-link px-4" href="#portfolio">Portfolio</a>
-                    <a class="nav-item nav-link px-4" href="#expertize">Positions of my interest</a>
-                    <a class="nav-item nav-link px-4" href="#about">About</a>
-                    <a class="nav-item nav-link px-4" href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <header id="home">
-        <div class="hero-img">
-            <div class="hero-shadow"></div>
-            <div class="hero-text">
-                <h1>
-                    <span class="highlighted">My</span>Work <br>
-                    
-                </h1>
-                <a href="#portfolio"> <i class="bi bi-arrow-down"></i> </a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section id="portfolio">
-            <div class="portfolio bg-white py-5">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center menu">
-                        <div class="col-4">
-                            <h1><span class="highlighted">My</span> portfolio</h1>
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            <div id="filters" class="row">
-                                <div class="col">
-                                    <button class="btn-portfolio active" data-filter="*">All</button>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="underline-dark"></div>
-                    <div class="row grid gallery">
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter3/chapter3.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter3/chapter3.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 3</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter5/chapter5.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter5/chapter5.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 5</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter6/Chapter6.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter6/chapter6.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 6</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter7/chapter7.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter7/chapter7.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 7</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        < <div class="col-sm-3 all c2">
-                            <a href="chapter8/chapter8.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter8/chapter8.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 8</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter9/chapter9.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter9/chapter9.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 9</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter10/chapter10.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter10/chapter10.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 10</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter11/chapter11.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter11/chapter11.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 11</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter14/chapter14.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter14/chapter14.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 14</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter15/chapter15.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter15/chapter15.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 15</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter16/chapter16.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter16/chapter16.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 16</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter17/chapter17.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter17/chapter17.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 17</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter18/chapter18.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter18/chapter18.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 18</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter19/chapter19.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter19/chapter19.jpg" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 19</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter12/chapter12.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter12/chapter12.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 12</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 all c2">
-                            <a href="chapter13/chapter13.html">
-                                <figure class="gallery__item">
-                                    <img src="chapter13/chapter13.png" alt="Gallery image 1" class="gallery__img">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <div class="row">
-                                                <div class="col-7 offset-1">
-                                                    <h3>Chapter 13</h3>
-                                                    
-                                                </div>
-                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </a>
-                        </div>
-                       
-                    </div>
-                </div>
-                </figure>
-                </a>
-            </div>
-            </div>
-            <div class="row justify-content-center mt-5">
-                <div class="col-3 text-center">
-                    <button id="load-more"><i class="bi bi-arrow-down display-4"></i>
-                        <p>Show more</p>
-                    </button>
-                </div>
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <section id="expertize">
-            <div class="expertize">
-                <div class="container">
-                    <div class="row item" data-text="web-design">
-                        <div class="col-12 col-sm-4">
-                            <h1><span class="highlighted">We</span>b designer</h1>
-                        </div>
-                        <div class="col-8 col-sm-6">
-                            <p>
-                                
-                                <span class="dots">...</span>
-                                <span class="more" style="display: none;">
-                                   
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col-3 col-sm-2 text-center">
-                            <button class="plus" onclick="readMore('web-design')"><i class="bi bi-plus-lg"></i></button>
-                        </div>
-                    </div>
-                    <div class="underline-light"></div>
-                    <div class="row item" data-text="brand">
-                        <div class="col-12 col-sm-4">
-                            <h1><span class="highlighted">Software</span> Developer</h1>
-                        </div>
-                        <div class="col-8 col-sm-6">
-                            <p>
-                               
-                                <span class="dots">...</span>
-                                <span class="more" style="display: none;">
-                                 
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col-3 col-sm-2 text-center">
-                            <button class="plus" onclick="readMore('brand')"><i class="bi bi-plus-lg"></i></button>
-                        </div>
-                    </div>
-                    <div class="underline-light"></div>
-                    <div class="row item" data-text="Game Developer">
-                        <div class="col-12 col-sm-4">
-                            <h1><span class="highlighted">Game </span>Developer</h1>
-                        </div>
-                        <div class="col-8 col-sm-6">
-                            <p>
-                               
-                                <span class="dots">...</span>
-                                <span class="more" style="display: none;">
-                                    
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col-3 col-sm-2 text-center">
-                            <button class="plus" onclick="readMore('social-media')"><i
-                                    class="bi bi-plus-lg"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="about">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-8">
-                            <h1>
-                                <span class="highlighted">My</span> name <br> is Thabiso
-                            </h1>
-                            <p> I am full time student at Code College,enrolled for a full stack developer bootcamp
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                           
-                        </div>
-                        <div class="underline-dark"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <h1>Contact</h1>
-                        </div>
-                        <div class="col">
-                            <p>
-                                Contact me via mail<br>
-                                <a href="mailto:example@example.com">Reggi9908@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <p>
-                                My phone <br>
-                                <a href="tel:+32-504-444-123">0796602884</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-form col-12">
-                        <form action="mailto:Reggi9908@gmail.com" method="post" class="needs-validation" novalidate>
-                            <div class="form-group mt-5">
-                                <label class="col-12">Full name</label>
-                                <input class="col-12" type="text" id="fname" placeholder="Full name" name="fname"
-                                    required XXXautofocusXXX>
-                                <div class="invalid-feedback">Please write a full name.</div>
-                            </div>
-                            <div class="form-group mt-5">
-                                <label class="col-12">E-mail</label>
-                                <input class="col-12" type="email" id="email" placeholder="E-mail" name="email" required
-                                    XXXautofocusXXX>
-                                <div class="invalid-feedback">Please write a correct e-mail.</div>
-                            </div>
-                            <div class="form-group mt-5">
-                                <label class="col-12">Message</label>
-                                <input class="col-12" type="text" id="message" placeholder="Message" name="message"
-                                    required XXXautofocusXXX>
-                                <div class="invalid-feedback">Please write a message.</div>
-                            </div>
-                            <div class="row justify-content-end">
-                                <div class="col-12 col-lg-3 mb-5 text-end">
-                                    <button type="submit" name="submit" class="main-button">Send message
-                                        
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="row justify-content-start align-items-end">
-                <div class="col-1">
-                    
-                </div>
-                <div class="col-5">
-                    <span>© 2022-23 CodeCollegeZA | Created by <a
-                            href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
-                            title="Firmbee - Free Invoicing App" target="_blank">SthabiDevOps</a></span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <!-- Isotope gallery -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <!-- or -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Custom JS codes -->
-    <script src="js/scroll.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/snippets.js"></script>
-
-    
-</body>
-
-</html>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="shell nav-wrap">
+<a class="brand" href="#home" aria-label="Thabiso Kojoana, home"><span class="monogram" aria-hidden="true">TK<span>.</span></span><span>Thabiso Kojoana</span></a>
+<nav aria-label="Main navigation"><a href="#portfolio">Projects</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+<main id="main">
+<section id="home" class="hero shell">
+<div class="hero-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> JAVA / BACKEND / ANDROID</p>
+<h1>Building software<br>for <em>everyday problems.</em></h1>
+<p class="lead">I'm Thabiso, a self-taught developer with a background in chemistry and computational chemistry. I turn ideas into practical applications with Java, Spring Boot and a curiosity for how systems work.</p>
+<div class="hero-actions"><a class="button primary" href="#kasi-till">Explore Kasi-Till <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Sthabi99">View GitHub <span aria-hidden="true">↗</span></a></div>
+<p class="availability">Open to junior software and backend roles · Willing to relocate</p></div>
+<aside class="hero-note" aria-label="Development focus"><p class="note-label">FROM IDEA TO WORKING SOFTWARE</p><div class="code-lines" aria-hidden="true"><span>01</span> Understand the problem<br><span>02</span> Build the application<br><span>03</span> Test the behaviour<br><span>04</span> Learn. Refine. Repeat.</div><div class="note-bottom"><span>Current focus</span><strong>Reliable Java backends<br>with useful front ends.</strong></div></aside>
+</section>
+<div class="skills-band"><div class="shell"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Android</span><span>JavaScript</span><span>Docker</span><span>AWS</span></div></div>
+<section id="portfolio" class="shell projects-section">
+<div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects with a purpose.</h2></div><p>One practical retail system.<br>A collection of smaller, hands-on builds.</p></div>
+<article id="kasi-till" class="featured">
+<div class="featured-copy"><p class="eyebrow">FEATURED PROJECT / MOBILE + BACKEND</p><h3>Kasi-Till</h3><p class="feature-summary">A till that fits in your pocket.</p>
+<p>A mobile-first point-of-sale and stock-management system for South African spaza shops. Designed around affordable Android phones, power interruptions and intermittent connectivity.</p>
+<p>I built the Android app, backend APIs and owner portal, with local storage, queued sales synchronisation, staff access and reporting. The backend uses PostgreSQL and Flyway, with a Docker-based AWS deployment.</p>
+<div class="tags"><span>Java</span><span>Spring Boot</span><span>Room</span><span>PostgreSQL</span><span>Docker / AWS</span></div>
+<div class="feature-links"><a class="button light" href="https://youtu.be/FUxB36qgQo0">Watch demo <span aria-hidden="true">↗</span></a><a href="https://63-186-192-30.sslip.io">Open owner portal <span aria-hidden="true">↗</span></a></div>
+<p class="feature-footnote">Owner portal requires an account. Private source walkthrough available on request.</p></div>
+<div class="architecture" aria-label="Kasi-Till system overview"><p class="note-label">HOW IT CONNECTS</p>
+<div class="system-node"><span>01 / IN THE SHOP</span><strong>Android POS</strong><p>Sales, stock and a local Room database</p></div>
+<div class="connector" aria-hidden="true">↓</div><div class="system-node"><span>02 / SYNCHRONISATION</span><strong>Spring Boot APIs</strong><p>Queued uploads, access checks and reporting</p></div>
+<div class="connector" aria-hidden="true">↓</div><div class="system-node"><span>03 / OWNER VISIBILITY</span><strong>PostgreSQL + web portal</strong><p>Shared records and store management</p></div>
+</div></article>
+<div class="collection-heading"><div><h2 class="small-heading">Smaller builds, real practice.</h2><p>Interactive learning projects, refined into usable demos.</p></div>
+<div id="project-filters" class="filters" role="group" aria-label="Filter projects" hidden>
+<button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="web" aria-pressed="false">Web demos</button><button type="button" data-filter="java" aria-pressed="false">Java console</button></div></div>
+<p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+<div class="project-grid"><article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">INTERACTION</span><span class="card-number" aria-hidden="true">01</span></div>
+<h3>Interactive CSS Robot</h3><p>A CSS-built robot with a 90-degree arm toggle, keyboard controls and reduced-motion support.</p><p class="stack">DOM events · CSS transforms</p>
+<div class="card-links"><a href="chapter7/chapter7.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter7">Source code</a></div></article>
+<article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">OBJECTS</span><span class="card-number" aria-hidden="true">02</span></div>
+<h3>Dream Car Builder</h3><p>Customise the make, model, colour and price, then explore the object behind your car preview.</p><p class="stack">JavaScript objects · Forms</p>
+<div class="card-links"><a href="chapter8/chapter8.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter8">Source code</a></div></article>
+<article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">COLLECTIONS</span><span class="card-number" aria-hidden="true">03</span></div>
+<h3>Name List Manager</h3><p>Add and remove names, sort in either direction, reverse the list and restore the example.</p><p class="stack">Arrays · Input validation</p>
+<div class="card-links"><a href="chapter11/chapter11.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter11">Source code</a></div></article>
+<article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">SIMULATION</span><span class="card-number" aria-hidden="true">04</span></div>
+<h3>Five-Day Weather Studio</h3><p>Explore simulated city forecasts, switch Celsius and Fahrenheit, and generate a new outlook.</p><p class="stack">State · Responsive UI</p>
+<div class="card-links"><a href="chapter17/chapter17.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter17">Source code</a></div></article>
+<article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">SIMULATION</span><span class="card-number" aria-hidden="true">05</span></div>
+<h3>Lemonade Stand Simulator</h3><p>Compare stock, selling prices and preparation costs through a five-day trading simulation.</p><p class="stack">Business logic · Calculations</p>
+<div class="card-links"><a href="chapter19/chapter19.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter19">Source code</a></div></article>
+<article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">PLANNING</span><span class="card-number" aria-hidden="true">06</span></div>
+<h3>Lunch Budget Planner</h3><p>See how many days your budget covers, with daily purchases and a running balance.</p><p class="stack">Validation · Integer-cent arithmetic</p>
+<div class="card-links"><a href="chapter18/chapter18.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter18">Source code</a></div></article>
+<article class="project-card" data-category="web">
+<div class="card-top"><span class="project-type">CREATIVE</span><span class="card-number" aria-hidden="true">07</span></div>
+<h3>Mad Libs Story Library</h3><p>Choose one of three adventures and turn your own words into a story, entirely in the browser.</p><p class="stack">Templates · Safe text rendering</p>
+<div class="card-links"><a href="chapter10/chapter10.html">Open demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/chapter10">Source code</a></div></article>
+<article class="project-card" data-category="java">
+<div class="card-top"><span class="project-type">JAVA / CONSOLE</span><span class="card-number" aria-hidden="true">08</span></div>
+<h3>Console Hangman</h3><p>A terminal word game with six chances, replay and validated guesses. Runs locally with a JDK; no browser required.</p><p class="stack">Java 17+ · Game state · Tests</p>
+<div class="card-links"><a href="https://github.com/Sthabi99/FinalPortfolio/tree/main/java/hangman">Run instructions <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Sthabi99/FinalPortfolio/tree/main/java/hangman">Source code</a></div></article></div>
+<p class="collection-note">Weather and lemonade figures are simulations, not live forecasts or business predictions. Earlier web exercises draw on <cite>JavaScript For Kids For Dummies</cite> and have been extended here.</p>
+</section>
+<section id="about" class="about-section"><div class="shell about-grid">
+<div><p class="eyebrow">A DIFFERENT STARTING POINT</p><h2>From chemistry<br>to code.</h2></div>
+<div><p>My BSc and BSc Honours studies at the University of the Witwatersrand developed my analytical thinking and problem-solving. Computational chemistry and exposure to machine learning sparked my interest in building software.</p>
+<p>I began learning programming independently in 2022. Since then, I've worked from small Java and JavaScript exercises towards building Kasi-Till across Android, backend and web layers.</p>
+<p>I'm particularly interested in Java backend development and growing into cloud development. I enjoy tracing problems across a system, testing my assumptions and learning from experienced engineers.</p>
+<div class="focus-grid"><div><h3>Build</h3><p>Java, Spring Boot, REST APIs, Android and JavaScript.</p></div><div><h3>Verify</h3><p>JUnit, Mockito, controller tests and hands-on debugging.</p></div><div><h3>Deliver</h3><p>PostgreSQL, Flyway, Git, Docker and AWS deployment.</p></div></div>
+</div></div></section>
+<section id="contact" class="shell contact-section"><div><p class="eyebrow">LET'S TALK</p><h2>Have a role or a project<br>in mind?</h2><p>I'm open to junior Java, backend and software development opportunities.</p></div>
+<div class="contact-links"><a class="email-link" href="mailto:reggi9908@gmail.com">reggi9908@gmail.com <span aria-hidden="true">↗</span></a><a href="https://github.com/Sthabi99">github.com/Sthabi99</a><p>Email opens your mail app. No contact details are collected by this website.</p></div></section>
+</main>
+<footer class="shell site-footer"><p>© <span id="year">2026</span> Thabiso Kojoana</p><p>Original portfolio template credit: <a href="https://firmbee.com">Firmbee</a>. Homepage rebuilt for this collection.</p><a href="#home">Back to top ↑</a></footer>
+</body></html>
