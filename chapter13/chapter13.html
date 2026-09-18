@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Train Animation Studio</title><link rel="stylesheet" href="chapter13.css"><script src="chapter13.js" defer></script></head>
+<body><main><header><a href="../index.html">Back to portfolio</a><span class="badge">ANIMATION LAB</span></header>
+<p class="eyebrow">NEXT STOP: A LITTLE EXPERIMENT</p><h1>Train Animation Studio</h1>
+<p class="intro">Take the controls. Set the pace, change direction and explore animation one frame at a time.</p>
+<section class="scene" aria-label="Train track">
+<div class="scene-label"><span>THE LOCAL LINE</span><span id="state">Paused</span></div>
+<div class="sun" aria-hidden="true"></div><div class="hill hill-one" aria-hidden="true"></div><div class="hill hill-two" aria-hidden="true"></div>
+<div class="station" aria-hidden="true"><span>TK STATION</span><div></div></div>
+<div id="track"><div class="rails" aria-hidden="true"></div>
+<button id="train" type="button" aria-label="Increase train speed by 30 pixels per second" title="Click or press Enter to increase speed">
+<svg viewBox="0 0 200 110" aria-hidden="true"><g stroke="#173548" stroke-width="4" stroke-linejoin="round">
+<path d="M10 42h52v43H10Z" fill="#f5bd65"/><path d="M15 42l8-10 10 5 12-8 12 13" fill="#173548"/>
+<path d="M70 28h39v55H70Z" fill="#f1ac52"/><path d="M65 26h48v8H65Z" fill="#173548"/><path d="M79 39h21v22H79Z" fill="#cce8e9"/>
+<path d="M109 52h60q14 0 14 13v18h-74Z" fill="#25858b"/><path d="M155 30h15v22h-15Z" fill="#173548"/>
+<path d="M149 25h27v8h-27Z" fill="#173548"/><path d="m182 71 14 19h-21" fill="#f1ac52"/>
+<path d="M8 84h177" fill="none"/><path d="M62 73h8" fill="none"/>
+<circle cx="25" cy="89" r="12" fill="#173548"/><circle cx="50" cy="89" r="12" fill="#173548"/>
+<circle cx="88" cy="89" r="14" fill="#173548"/><circle cx="127" cy="89" r="14" fill="#173548"/><circle cx="165" cy="89" r="14" fill="#173548"/>
+<path d="M88 89h77" stroke="#b9d6da" stroke-width="5"/><circle cx="25" cy="89" r="3" fill="#cce8e9"/><circle cx="50" cy="89" r="3" fill="#cce8e9"/>
+</g></svg></button></div></section>
+<section class="controls" aria-label="Animation controls"><div class="buttons"><button id="start" type="button" class="primary">Start</button><button id="pause" type="button" disabled>Pause</button><button id="step" type="button">Step forward</button><button id="reverse" type="button">Reverse direction</button><button id="reset" type="button">Reset</button></div>
+<div class="speed-control"><label for="speed">Speed <output id="speedValue" for="speed">120 px/s</output></label><input id="speed" type="range" min="30" max="300" step="30" value="120"><div class="range-labels"><span>Slow · 30 px/s</span><span>Fast · 300 px/s</span></div></div></section>
+<div class="metrics" aria-label="Animation information"><div><span>Position along track</span><strong id="position">0%</strong></div><div><span>Direction</span><strong id="direction">Right</strong></div><div><span>Turnarounds</span><strong id="turns">0</strong></div></div>
+<p id="status" role="status" aria-live="polite">Ready. Press Start, or use Step forward without continuous motion.</p>
+<p class="note">Click the train to increase its speed. It turns around at each end of the track. The demo starts paused, pauses when you leave the tab, and offers single-step controls for reduced motion. This is a visual animation, not a railway simulation.</p>
+<footer>JavaScript animation frames · CSS transforms · Responsive SVG illustration</footer></main></body></html>
