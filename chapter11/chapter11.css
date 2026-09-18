@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf3f7; color: #17324d; font: 16px/1.5 Arial, sans-serif; }
+main { max-width: 850px; margin: 40px auto; padding: 28px; background: white; border-radius: 16px; }
+h1 { margin: 0 0 8px; } h2 { font-size: 1.2rem; }
+a { color: #006b73; }
+label { display: block; font-weight: bold; }
+input, select, button { font: inherit; padding: 10px; border: 1px solid #97abba; border-radius: 6px; }
+input, select { width: 100%; background: white; color: #17324d; }
+button { background: #007782; color: white; cursor: pointer; }
+button:hover { background: #005b64; } button:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 3px solid #c26400; outline-offset: 3px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+#status { min-height: 24px; font-weight: bold; }
+.note { color: #526270; font-size: .9rem; }
+@media(max-width:600px) { main { margin: 12px; padding: 18px; } }
+li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #dde7eb; }
+li span { overflow-wrap: anywhere; min-width: 0; } ol { padding: 0; } li button { flex-shrink: 0; }

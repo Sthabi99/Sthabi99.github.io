@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chapter8</title>
-    <link rel="stylesheet" href="chapter8.css">
-  </head>
-  <body>
-    <div id="car">
-      This <span id="modelyear"></span> dream car can be yours for just: $<span
-        id="pricetag"
-      ></span>
-      <div id="body"></div>
-      <div class="wheels"id="frontwheel"></div>
-      <div class="wheels"id="backwheel"></div>
-    </div>
-    <script src="chapter8.js"></script>
-  </body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dream Car Builder</title><link rel="stylesheet" href="chapter8.css"></head>
+<body><main><a href="../index.html">Back to portfolio</a><h1>Dream Car Builder</h1>
+<p>Edit the details to build your own car object and preview it below.</p>
+<form id="carForm"><div class="fields">
+<label>Make<input id="make" maxlength="40" required></label>
+<label>Model<input id="model" maxlength="40" required></label>
+<label>Year<input id="year" type="number" min="1886" step="1" required></label>
+<label>Price (ZAR)<input id="price" type="number" min="0" max="1000000000" step="0.01" required></label>
+<label>Body style<select id="bodyStyle"><option>Luxury Car</option><option>Hatchback</option><option>Sedan</option><option>SUV</option><option>Coupe</option><option>Pickup</option></select></label>
+<label>Colour<input id="color" type="color"></label></div>
+<div class="controls"><button type="submit">Update car</button><button type="button" id="reset">Reset example</button></div></form>
+<p id="status" role="status" aria-live="polite"></p>
+<section aria-label="Car preview"><h2 id="carTitle"></h2><p><span id="modelyear"></span> | <span id="styleLabel"></span> | <strong id="pricetag"></strong></p>
+<div id="car" role="img" aria-label="Car illustration"><div id="body"></div><div class="wheels" id="backwheel"></div><div class="wheels" id="frontwheel"></div></div></section>
+<details><summary>View the JavaScript object</summary><pre id="objectPreview"></pre></details>
+<p class="note">An educational car customiser, not a vehicle listing or price estimate. Details reset when the page reloads.</p>
+</main><script src="chapter8.js"></script></body></html>

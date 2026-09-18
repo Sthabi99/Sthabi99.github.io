@@ -69,6 +69,16 @@ p {
     left:20%;
 }
 #leftarm {
+  height: min(40vh, 28vw);
     position: absolute;
     left: 70%;
+    transform-origin: top left;
+    transition: transform 450ms ease-in-out;
+    cursor: pointer;
+}
+
+#leftarm.arm-raised { transform: rotate(-90deg); }
+#leftarm:focus-visible { outline: 3px solid #174ea6; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+    #leftarm { transition: none; }
 }

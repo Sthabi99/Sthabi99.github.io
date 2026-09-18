@@ -16,18 +16,17 @@ rightEye.addEventListener("click", moveUpDown);
 
 let leftArm = document.getElementById("leftarm");
 leftArm.addEventListener("click", moveRightLeft);
+leftArm.addEventListener("keydown", function (e) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    moveRightLeft(e);
+  }
+});
 
 function moveRightLeft(e) {
-  let robotPart = e.target;
-  let l = 0;
-  let animation = setInterval(frame, 50);
-  function frame() {
-    robotPart.style.left = l + "%";
-    l++;
-    if (l === 70) {
-      clearInterval(animation);
-    }
-  }
+  let robotPart = e.currentTarget;
+  let raised = robotPart.classList.toggle("arm-raised");
+  robotPart.setAttribute("aria-pressed", String(raised));
 }
 
 function moveUpDown(e) {
@@ -55,4 +54,3 @@ function headMovement(e) {
       }
     }
   }
-  

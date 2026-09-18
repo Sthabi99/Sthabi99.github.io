@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter11 CSS</title>
-    <link rel="stylesheet" href="chapter11.css">
-
-</head>
-<body>
-    <h1>People I Know</h1>
-    <div id="peopleIKnow"></div>
-<script src="chapter11.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Name List Manager</title><link rel="stylesheet" href="chapter11.css"></head>
+<body><main><a href="../index.html">Back to portfolio</a><h1>Name List Manager</h1>
+<p>Add names and explore how array operations change the list.</p>
+<form id="nameForm"><label for="nameInput">Name</label><input id="nameInput" maxlength="80" autocomplete="off" required>
+<div class="controls"><button type="submit">Add name</button></div></form>
+<div class="controls"><button id="sortAsc">Sort A-Z</button><button id="sortDesc">Sort Z-A</button>
+<button id="reverse">Reverse order</button><button id="reset">Reset example</button></div>
+<p id="status" role="status" aria-live="polite"></p><h2>Names (<span id="count">0</span>)</h2>
+<ol id="peopleIKnow"></ol><p id="empty" hidden>No names yet. Add a name to get started.</p>
+<p class="note">Changes are kept in memory for this visit. Reloading restores the example names.</p>
+</main><script src="chapter11.js"></script></body></html>

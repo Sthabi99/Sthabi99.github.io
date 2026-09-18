@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="chapter17.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five-Day Weather Studio</title><link rel="stylesheet" href="chapter17.css">
 </head>
 <body>
-    <div id="5DayWeather"></div>
-    <script src="chapter17.js"></script>
-</body>
-</html>
+<main>
+<header><a href="../index.html" class="back">Back to portfolio</a><span class="badge">SIMULATED DATA</span></header>
+<section class="intro"><p class="eyebrow">A LITTLE OUTLOOK</p><h1>Five-Day Weather Studio</h1>
+<p>Explore a fresh five-day weather scenario for a South African city.</p></section>
+<section class="toolbar" aria-label="Forecast controls">
+<div class="city-control"><label for="city">Choose a city</label><select id="city">
+<option value="johannesburg">Johannesburg</option><option value="cape-town">Cape Town</option>
+<option value="durban">Durban</option><option value="pretoria">Pretoria</option>
+<option value="bloemfontein">Bloemfontein</option><option value="gqeberha">Gqeberha</option>
+</select></div>
+<fieldset><legend>Temperature unit</legend><div class="units">
+<label><input type="radio" name="unit" value="C" checked><span>°C</span></label>
+<label><input type="radio" name="unit" value="F"><span>°F</span></label>
+</div></fieldset>
+<button type="button" id="refresh">Generate new forecast <span aria-hidden="true">↻</span></button>
+</section>
+<section class="outlook" aria-labelledby="forecastTitle">
+<div class="outlook-heading"><div><p class="eyebrow">YOUR FIVE-DAY OUTLOOK</p><h2 id="forecastTitle"></h2></div><p id="dateRange"></p></div>
+<div id="5DayWeather" class="forecast-grid"></div>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+<aside><strong>A simulation, not a live forecast.</strong> All temperatures, conditions, rain chances and wind speeds are generated examples.
+City selection creates a new scenario; no weather service or location tracking is used. Do not use this demo for travel or safety decisions.</aside>
+<footer>Built with JavaScript, HTML and CSS. Change cities, switch units or generate another outlook.</footer>
+</main><script src="chapter17.js"></script>
+</body></html>

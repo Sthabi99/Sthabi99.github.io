@@ -1,17 +1,1 @@
-body {
-    font-family: sans-serif;
-}
-#instructions {
-    background-color: Red;
-    padding: 6px;
-    margin: 6px;
-}
-#orderForm {
-    width: 75%;
-    margin: 20px auto;
-}
-#receipt {
-    background-color: #3EFF00;
-    color: Green;
-    padding: 6px;
-}
+@import url("../assets/project-demos.css");
