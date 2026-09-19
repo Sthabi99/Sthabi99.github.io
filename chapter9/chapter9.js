@@ -57,13 +57,13 @@ function calculateIt() {
                     returnValue = operand1 * operand2;
                     break;
                 case "/":
-                    returnValue = operand1 * operand2;
+                    returnValue = operand1 / operand2;
                     break;
                 case "%":
                     returnValue = operand1 % operand2;
                     break;
                 case "concat":
-                    returnValue = operand1 + operand2;
+                    returnValue = String(operand1) + String(operand2);
                     myOperator = "+";
                     break;
                 case "==":
@@ -104,8 +104,8 @@ function calculateIt() {
     if (typeof(operand2)==="string"){
         operand2 = '"' + operand2 + '"';
     }
-    document.getElementById("final-operation").innerHTML = operand1 + myOperator + operand2;
+    document.getElementById("final-operation").textContent = operand1 + myOperator + operand2;
     
     //display the return value
-    document.getElementById("result").innerHTML = returnValue;
+    document.getElementById("result").textContent = returnValue;
 };

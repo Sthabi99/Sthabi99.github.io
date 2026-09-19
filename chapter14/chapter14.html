@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummies Chapter 14 IF...ELSE</title>
+    <title>Pizzeria Order Calculator</title>
     <link rel="stylesheet" href="chapter14.css">
 </head>
 
 <body>
-    <h1>JavaScript Pizzeria</h1>
+    <a href="../index.html">Back to portfolio</a>
+    <h1>Pizzeria Order Calculator</h1>
+    <p>A practice calculator, not a real ordering service. Example prices: $10 per pizza, $12 for supreme, and $5 delivery. Delivery is free on birthdays or for orders over $10 in Anytown.</p>
 
     <div id="orderForm">
         <label>How many pizzas do you want?
-            <input type="number" id="numPizzas" />
+            <input type="number" id="numPizzas" min="1" max="100" step="1" value="1" />
         </label>
         <br />
         <br />
@@ -38,15 +40,15 @@
         <label>Is it your Birthday?
             <select id="birthday" value="no">
                 <option value="yes">Yes</option>
-                <option value="no">No</option>
+                <option value="no" selected>No</option>
             </select>
         </label>
         <br />
         <br />
 
-        <button type="button" id="placeOrder">Place Order</button>
+        <button type="button" id="placeOrder">Calculate total</button>
     </div>
-    <div id="displayTotal"></div>
+    <div id="displayTotal" role="status" aria-live="polite"></div>
     <script src="chapter14.js"></script>
 </body>
 

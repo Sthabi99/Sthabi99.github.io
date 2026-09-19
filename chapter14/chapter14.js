@@ -25,6 +25,10 @@ document.getElementById("placeOrder").addEventListener("click", placeOrder);
 function placeOrder() {
   // get form values
   let numPizzas = document.getElementById("numPizzas").value;
+  if (numPizzas.trim() === "" || !Number.isInteger(Number(numPizzas)) || Number(numPizzas) < 1 || Number(numPizzas) > 100) {
+    document.getElementById("displayTotal").textContent = "Enter a whole number of pizzas between 1 and 100.";
+    return;
+  }
   let typePizza = document.getElementById("typePizza").value;
   let deliveryCity = document.getElementById("deliveryCity").value;
   let birthday = document.getElementById("birthday").value;
@@ -35,16 +39,16 @@ function placeOrder() {
   let deliveryPrice = calculateDelivery(orderPrice, deliveryCity, birthday);
 
   // create the output
-  let theOutput = "<p>Thank you for your order.</p>";
+  let theOutput = "<p>Your example order:</p>";
 
   // todo: output the delivery price, if there is one
   if (deliveryPrice === 0) {
     theOutput += "<p>You get free delivery!</p>";
   } else {
-    theOutput += "<p>Your delivery cost is: $" + deliveryPrice;
+    theOutput += "<p>Your delivery cost is: $" + deliveryPrice.toFixed(2) + "</p>";
   }
 
-  theOutput += "<p>Your total is: $" + (orderPrice + deliveryPrice);
+  theOutput += "<p>Your total is: $" + (orderPrice + deliveryPrice).toFixed(2) + "</p>";
 
   // display the output
   document.getElementById("displayTotal").innerHTML = theOutput;
