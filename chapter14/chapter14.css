@@ -1,14 +1,2 @@
-body {
-  font-family: Arial, sans-serif;
-}
-h1 {
-  text-align: center;
-}
-#orderForm {
-  background-color: #eeeeee;
-  border: 4px solid yellow;
-  border-radius: 4px;
-  padding: 8px;
-  margin: 8px;
-  box-shadow: 10px 10px 5px #888888;
-}
+@import url("../assets/project-demos.css");
+.fields{grid-template-columns:repeat(2,minmax(0,1fr))}#displayTotal p:last-child{font-weight:750;font-size:1.35rem;color:#007681}@media(max-width:500px){.fields{grid-template-columns:1fr}}

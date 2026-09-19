@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Five-Day Weather Studio</title><link rel="stylesheet" href="chapter17.css">
-</head>
+<link rel="stylesheet" href="../assets/project-notes.css"></head>
 <body>
 <main>
-<header><a href="../index.html" class="back">Back to portfolio</a><span class="badge">SIMULATED DATA</span></header>
+<header><a href="../index.html" class="back">Back to portfolio</a><span class="badge">RANDOM DATA &amp; ARRAYS</span></header>
 <section class="intro"><p class="eyebrow">WEATHER SIMULATOR</p><h1>Five-Day Weather Studio</h1>
-<p>Choose a South African city to generate a simulated five-day forecast.</p></section>
+<p>Choose a city to label your five-day weather display, then switch units or generate new example values.</p></section>
 <section class="toolbar" aria-label="Forecast controls">
 <div class="city-control"><label for="city">Choose a city</label><select id="city">
 <option value="johannesburg">Johannesburg</option><option value="cape-town">Cape Town</option>
@@ -26,8 +26,7 @@
 <div id="5DayWeather" class="forecast-grid"></div>
 </section>
 <p id="status" role="status" aria-live="polite"></p>
-<aside><strong>A simulation, not a live forecast.</strong> All temperatures, conditions, rain chances and wind speeds are generated examples.
-City selection creates a new scenario; no weather service or location tracking is used. Do not use this demo for travel or safety decisions.</aside>
+
 <footer>Built with JavaScript, HTML and CSS. Change cities, switch units or generate another outlook.</footer>
-</main><script src="chapter17.js"></script>
+<section class="project-explanation" aria-label="About this project"><h2>How it works</h2><p>Choose a city, generate five days of example weather and switch between Celsius and Fahrenheit.</p><p>JavaScript creates five daily objects with random weather values and displays them as cards. Changing units converts the stored temperatures; changing cities generates a new set. The values come from the script, not a weather service.</p><p class="concepts"><strong>Concepts:</strong> Arrays, objects, dates, random numbers and DOM rendering.</p></section></main><script src="chapter17.js"></script>
 </body></html>

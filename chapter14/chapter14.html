@@ -1,55 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Order Calculator</title>
-    <link rel="stylesheet" href="chapter14.css">
-</head>
-
-<body>
-    <a href="../index.html">Back to portfolio</a>
-    <h1>Pizzeria Order Calculator</h1>
-    <p>A practice calculator, not a real ordering service. Example prices: $10 per pizza, $12 for supreme, and $5 delivery. Delivery is free on birthdays or for orders over $10 in Anytown.</p>
-
-    <div id="orderForm">
-        <label>How many pizzas do you want?
-            <input type="number" id="numPizzas" min="1" max="100" step="1" value="1" />
-        </label>
-        <br />
-        <br />
-        <label>What kind of pizzas?
-            <select id="typePizza" value="cheese">
-                <option value="cheese">Cheese</option>
-                <option value="pepperoni">Pepperoni</option>
-                <option value="supreme">Supreme</option>
-            </select>
-        </label>
-        <br />
-        <br />
-        <label>Where do you live?
-            <select id="deliveryCity" value="Anytown">
-                <option value="Anytown">Anytown</option>
-                <option value="Sacramento">Sacramento</option>
-                <option value="Vaal">Vaal</option>
-            </select>
-        </label>
-        <br />
-        <br />
-        <label>Is it your Birthday?
-            <select id="birthday" value="no">
-                <option value="yes">Yes</option>
-                <option value="no" selected>No</option>
-            </select>
-        </label>
-        <br />
-        <br />
-
-        <button type="button" id="placeOrder">Calculate total</button>
-    </div>
-    <div id="displayTotal" role="status" aria-live="polite"></div>
-    <script src="chapter14.js"></script>
-</body>
-
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pizzeria Order Calculator</title><link rel="stylesheet" href="chapter14.css"><link rel="stylesheet" href="../assets/project-notes.css"></head>
+<body><main><a href="../index.html">Back to portfolio</a><p class="eyebrow">FUNCTIONS &amp; CONDITIONALS</p><h1>Pizzeria Order Calculator</h1><p class="intro">Build an example pizza order and see how the quantity, pizza type and delivery rules affect its total.</p>
+<section class="panel"><h2>Your order</h2><div id="orderForm" class="fields">
+<label>Number of pizzas<input type="number" id="numPizzas" min="1" max="100" step="1" value="1"></label>
+<label>Pizza type<select id="typePizza"><option value="cheese">Cheese — $10</option><option value="pepperoni">Pepperoni — $10</option><option value="supreme">Supreme — $12</option></select></label>
+<label>Delivery location<select id="deliveryCity"><option value="Anytown">Anytown</option><option value="Sacramento">Sacramento</option><option value="Vaal">Vaal</option></select></label>
+<label>Is it your birthday?<select id="birthday"><option value="no">No</option><option value="yes">Yes</option></select></label></div>
+<div class="controls"><button type="button" id="placeOrder">Calculate total</button></div></section>
+<section class="panel"><h2>Order total</h2><div id="displayTotal" role="status" aria-live="polite">Choose your order details, then calculate the total.</div></section>
+<p class="note">Example prices are in US dollars. Delivery costs $5, or is free on birthdays and for orders over $10 in Anytown. This page calculates prices only; it does not place an order.</p>
+<section class="project-explanation" aria-label="About this project"><h2>How it works</h2><p>Choose a quantity, pizza type and delivery location to calculate an example order. No order is sent.</p><p>One function calculates the pizza cost; another checks the delivery rules. The script validates the quantity and adds the two amounts to display the total.</p><p class="concepts"><strong>Concepts:</strong> Functions, conditionals, number validation and price calculations.</p></section></main><script src="chapter14.js"></script></body></html>

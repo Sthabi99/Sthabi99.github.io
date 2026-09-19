@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Name List Manager</title><link rel="stylesheet" href="chapter11.css"></head>
+<title>Name List Manager</title><link rel="stylesheet" href="chapter11.css"><link rel="stylesheet" href="../assets/project-notes.css"></head>
 <body><main><a href="../index.html">Back to portfolio</a><h1>Name List Manager</h1>
 <p>Add names and explore how array operations change the list.</p>
 <form id="nameForm"><label for="nameInput">Name</label><input id="nameInput" maxlength="80" autocomplete="off" required>
@@ -10,4 +10,4 @@
 <p id="status" role="status" aria-live="polite"></p><h2>Names (<span id="count">0</span>)</h2>
 <ol id="peopleIKnow"></ol><p id="empty" hidden>No names yet. Add a name to get started.</p>
 <p class="note">Changes are kept in memory for this visit. Reloading restores the example names.</p>
-</main><script src="chapter11.js"></script></body></html>
+<section class="project-explanation" aria-label="About this project"><h2>How it works</h2><p>Add names, remove individual entries or change the list order.</p><p>The script keeps names in an array, rejects blank and duplicate entries, then rebuilds the displayed list after each change. Reloading the page restores the example names.</p><p class="concepts"><strong>Concepts:</strong> Arrays, sorting, validation and DOM updates.</p></section></main><script src="chapter11.js"></script></body></html>

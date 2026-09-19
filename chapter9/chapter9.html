@@ -1,78 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Calculator</title>
-    <link href="chapter9.css " rel="stylesheet" />
-  </head>
-  <body>
-    <div id="calculator">
-    <a href="../index.html">Back to portfolio</a>
-    <header>
-    <h1>JS Super-Calculator</h1>
-    <p>The super-calculator shows the result of using different operators</p>
-    </header>
-    <div class="input-area">
-    <h2>Step 1: Enter the 1st Operand</h2>
-        <input type="text" id="operand1" value="1" />
-        <select id="operand1-type">
-            <option value="number">number</option>
-            <option value="string">string</option>
-        </select>
-    </div>
-    
-    <div class="input-area">
-    <h2>Step 2: Choose an Operator</h2>
-        <div class="operator-choices">
-        <h3>Arithmetic Operators</h3>
-
-        <input type="radio" name="operator" value="+" checked>+&nbsp;
-        <input type="radio" name="operator" value="-">-&nbsp;
-        <input type="radio" name="operator" value="*">*&nbsp;
-        <input type="radio" name="operator" value="/">/&nbsp;
-        <input type="radio" name="operator" value="%">%&nbsp;
-     
-        <h3>String Operator</h3>
-        <input type="radio" name="operator" value="concat">+ (concatenation)&nbsp;
-            
-        <h3>Comparison Operators</h3>
-        <input type="radio" name="operator" value="==">==&nbsp;
-        <input type="radio" name="operator" value="===">===&nbsp;
-        <input type="radio" name="operator" value="!=">!=&nbsp;
-        <input type="radio" name="operator" value="!==">!==&nbsp;
-        <input type="radio" name="operator" value=">">&gt;&nbsp;
-        <input type="radio" name="operator" value=">=">&gt;=&nbsp;
-        <input type="radio" name="operator" value="<">&lt;&nbsp;
-        <input type="radio" name="operator" value="<=">&lt;=&nbsp;
-        </div>
-    </div>
-            
-    <div class="input-area">
-    <h2>Step 3: Enter the 2nd Operand</h2>
-    <input type="text" id="operand2" value="1">
-    <select id="operand2-type">
-        <option value="number">number</option>
-        <option value="string">string</option>
-    </select>
-    </div>
-    
-    <div class="input-area">
-    <h2>Step 4: Click the Button</h2>
-    <input type="submit" id="submit" value="Operate!">
-    </div>
-<hr>
-    <div class="output-area">
-    <h2>Output</h2>
- 
-    <h3>Operation</h3>
-    <span id="final-operation">???</span>
-
-    
-    <h3>Return Value:</h3>
-    <span id="result">???</span>
-    </div>
-</div>
-    <script src="chapter9.js"></script>
-  </body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Super Calculator</title><link rel="stylesheet" href="chapter9.css"><link rel="stylesheet" href="../assets/project-notes.css"></head>
+<body><main><a href="../index.html">Back to portfolio</a><p class="eyebrow">JAVASCRIPT OPERATORS</p><h1>Super Calculator</h1><p class="intro">Compare what JavaScript does with numbers and text. Choose two inputs and an operator, then calculate the result.</p>
+<section class="panel" aria-label="Calculator inputs"><div class="fields">
+<label>First value<input id="operand1" type="text" value="5"></label><label>First value type<select id="operand1-type"><option value="number">Number</option><option value="string">String (text)</option></select></label>
+<label>Second value<input id="operand2" type="text" value="5"></label><label>Second value type<select id="operand2-type"><option value="number">Number</option><option value="string">String (text)</option></select></label></div>
+<fieldset><legend>Arithmetic</legend><div class="operators">
+<label><input type="radio" name="operator" value="+" checked>Add (+)</label>
+<label><input type="radio" name="operator" value="-" >Subtract (-)</label>
+<label><input type="radio" name="operator" value="*" >Multiply (*)</label>
+<label><input type="radio" name="operator" value="/" >Divide (/)</label>
+<label><input type="radio" name="operator" value="%" >Remainder (%)</label>
+</div></fieldset>
+<fieldset><legend>Text</legend><div class="operators"><label><input type="radio" name="operator" value="concat">Join as text</label></div></fieldset>
+<fieldset><legend>Comparisons</legend><div class="operators">
+<label><input type="radio" name="operator" value="==">Equal (==)</label>
+<label><input type="radio" name="operator" value="===">Strictly equal (===)</label>
+<label><input type="radio" name="operator" value="!=">Not equal (!=)</label>
+<label><input type="radio" name="operator" value="!==">Strictly not equal (!==)</label>
+<label><input type="radio" name="operator" value="&gt;">Greater than (&gt;)</label>
+<label><input type="radio" name="operator" value="&gt;=">Greater or equal (&gt;=)</label>
+<label><input type="radio" name="operator" value="&lt;">Less than (&lt;)</label>
+<label><input type="radio" name="operator" value="&lt;=">Less or equal (&lt;=)</label>
+</div></fieldset><div class="controls"><button type="button" id="submit">Calculate</button></div></section>
+<section class="panel output-area" aria-live="polite"><h2>Result</h2><p class="note">Expression</p><code id="final-operation">Choose your inputs above.</code><p class="note">Returned value</p><strong id="result">—</strong></section>
+<p class="note">This shows JavaScript's own results, including NaN for invalid numeric operations and Infinity when dividing a non-zero number by zero.</p>
+<section class="project-explanation" aria-label="About this project"><h2>How it works</h2><p>Enter two values, choose their types and select an operator to see the result.</p><p>The script converts each input to a number or string, applies the selected operator and displays the expression and result as text. Try 5 as a number and 5 as a string with == and === to compare the results.</p><p class="concepts"><strong>Concepts:</strong> Type conversion, arithmetic, string operations and comparisons.</p></section></main><script src="chapter9.js"></script></body></html>

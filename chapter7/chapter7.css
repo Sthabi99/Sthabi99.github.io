@@ -1,3 +1,4 @@
+@import url("../assets/project-demos.css");
 body {
     font-family: Arial;
 }
@@ -82,3 +83,4 @@ p {
 @media (prefers-reduced-motion: reduce) {
     #leftarm { transition: none; }
 }
+#robot{position:relative;height:440px;max-width:650px;margin:25px auto;background:white;border:1px solid #d5e2eb;border-radius:18px;overflow:hidden}#leftarm{height:min(176px,28vw)}

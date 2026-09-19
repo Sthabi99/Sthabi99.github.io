@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lunch Budget Planner</title><link rel="stylesheet" href="chapter18.css"></head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lunch Budget Planner</title><link rel="stylesheet" href="chapter18.css"><link rel="stylesheet" href="../assets/project-notes.css"></head>
 <body><main><a href="../index.html">Back to portfolio</a><p class="eyebrow">SMALL PROJECTS / HANDS-ON JAVASCRIPT</p><h1>Lunch Budget Planner</h1><p class="intro">Plan how far your lunch budget can go. Set your allowance, sandwich price and daily quantity to see a clear spending breakdown.</p>
 <form id="lunchForm" class="panel"><h2>Your lunch plan</h2><div class="fields">
 <label>Budget (ZAR)<input id="budget" type="number" min="0" max="100000" step="0.01" value="200" required></label>
@@ -12,4 +12,4 @@
 <div class="metric"><span>Days covered</span><strong id="covered"></strong></div><div class="metric"><span>Sandwiches bought</span><strong id="bought"></strong></div><div class="metric"><span>Total spent</span><strong id="spent"></strong></div><div class="metric"><span>Budget left</span><strong id="remaining"></strong></div></div>
 <p id="summary"></p><div class="table-wrap"><table><caption>Daily purchases</caption><thead><tr><th scope="col">Day</th><th scope="col">Sandwiches</th><th scope="col">Cost</th><th scope="col">Balance</th></tr></thead><tbody id="receipt"></tbody></table></div></section>
 <p class="note">The price stays fixed across your plan. Purchases stop when the next full day's order is unaffordable; unspent money is kept in the balance.</p>
-<footer>Built with JavaScript, HTML and CSS. Data stays in memory and resets when you reload.</footer></main><script src="chapter18.js"></script></body></html>
+<footer>Built with JavaScript, HTML and CSS. Data stays in memory and resets when you reload.</footer><section class="project-explanation" aria-label="About this project"><h2>How it works</h2><p>Enter a budget, sandwich price and daily quantity to see how many days you can afford.</p><p>A loop subtracts each day's cost from the balance and records the purchase. It stops before a full day's order would exceed the remaining budget.</p><p class="concepts"><strong>Concepts:</strong> Loops, number validation and running totals.</p></section></main><script src="chapter18.js"></script></body></html>

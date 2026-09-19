@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Train Animation Studio</title><link rel="stylesheet" href="chapter13.css"><script src="chapter13.js" defer></script></head>
+<title>Train Animation Studio</title><link rel="stylesheet" href="chapter13.css"><script src="chapter13.js" defer></script><link rel="stylesheet" href="../assets/project-notes.css"></head>
 <body><main><header><a href="../index.html">Back to portfolio</a><span class="badge">ANIMATION LAB</span></header>
 <p class="eyebrow">JAVASCRIPT ANIMATION</p><h1>Train Animation Studio</h1>
 <p class="intro">Start the train, adjust its speed or change direction. Use Step forward to move it a little at a time.</p>
@@ -25,4 +25,4 @@
 <div class="metrics" aria-label="Animation information"><div><span>Position along track</span><strong id="position">0%</strong></div><div><span>Direction</span><strong id="direction">Right</strong></div><div><span>Turnarounds</span><strong id="turns">0</strong></div></div>
 <p id="status" role="status" aria-live="polite">Ready. Press Start, or use Step forward without continuous motion.</p>
 <p class="note">Click the train to increase its speed. It turns around at each end of the track. The demo starts paused, pauses when you leave the tab, and offers single-step controls for reduced motion. This is a visual animation, not a railway simulation.</p>
-<footer>JavaScript animation frames · CSS transforms · Responsive SVG illustration</footer></main></body></html>
+<footer>JavaScript animation frames · CSS transforms · Responsive SVG illustration</footer><section class="project-explanation" aria-label="About this project"><h2>How it works</h2><p>Start or pause the train, change its speed or move it one step at a time.</p><p>Each animation frame calculates how far the train should move from the time elapsed and the chosen speed. The script reverses direction at the track edges and pauses when you leave the tab.</p><p class="concepts"><strong>Concepts:</strong> Animation frames, elapsed time, boundary checks and state.</p></section></main></body></html>
